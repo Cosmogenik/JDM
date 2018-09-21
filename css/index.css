@@ -1,0 +1,288 @@
+.jd_layout {
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    height: 3000px;
+    background-color: #F5F5F5;
+}
+
+.jd_search {
+    width: 100%;
+    max-width: 640px;
+    height: 40px;
+    position: fixed;
+    z-index: 999;
+}
+
+.jd_search>.jd_logo {
+    width: 56px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    background: url("../img/jd-sprites.png");
+    background-size: 200px 200px;
+    /* 移动端图片缩小一倍 */
+    background-position: 0px -108px;
+}
+
+.jd_search>.jd_searchBox {
+    width: 100%;
+    padding-left: 76px;
+    padding-right: 50px;
+    height: 100%;
+    position: relative;
+}
+
+.jd_search>.jd_searchBox>input {
+    margin-top: 5px;
+    height: 30px;
+    border-radius: 15px;
+    padding-left: 30px;
+    color: #666;
+    width: 100%;   
+}
+
+.jd_search>.jd_searchBox>input::-webkit-input-placeholder {
+    color: #ccc;
+    font-size: 12px;
+}
+
+.jd_search>.jd_searchBox>span {
+    display: block;
+    width: 20px;
+    height: 18px;
+    position: absolute;
+    left: 82px;
+    top: 12px;
+    background: url(../img/sprites.png) -120px 0px no-repeat;
+    background-size: 200px 200px;
+}
+
+.jd_search>.jd_login {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 40px;
+    color: #fff;
+}
+
+/* 轮播图样式 */
+
+.jd_banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.jd_banner ul:nth-of-type(1) {
+    width: 800%;
+    list-style: none;
+    position: relative;
+}
+
+.jd_banner ul:nth-of-type(1) li {
+    width: 12.5%;
+    float: left;
+}
+
+.jd_banner ul:nth-of-type(1) li img {
+    width: 100%;
+    display: block;
+}
+
+ul.jd_banner_control {
+    list-style: none;
+    position: absolute;
+    z-index: 9;
+    width: 138px;
+    height: 10px;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+}
+
+ul.jd_banner_control>li {
+    width: 6px;
+    height: 6px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    float: left;
+}
+
+ul.jd_banner_control>li:first-of-type {
+    margin-left: 0;
+}
+
+ul.jd_banner_control>li.current {
+    background: #fff;
+}
+
+/* 导航样式 */
+
+div.jd_nav {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #fff;
+    box-shadow: 0px 1px 1px 0px #ccc;
+}
+
+div.jd_nav>ul {
+    list-style: none;
+}
+
+div.jd_nav>ul>li {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+div.jd_nav>ul>li>a {
+    width: 100%;
+    height: 50%;
+    display: block;
+}
+
+div.jd_nav>ul>li img {
+    width: 50px;
+}
+
+div.jd_nav>ul>li p {
+    margin: 5px 0;
+}
+
+/* 秒杀样式 */
+
+div.jd_sk {
+    width: 100%;
+    margin-top: 10px;
+    box-shadow:  0px 1px 1px 0px #ccc;
+    background: #fff;
+}
+
+div.jd_sk_tip {
+    width: 100%;
+    height: 26px;
+}
+
+div.jd_sk_tip>span:nth-of-type(1) {
+    width: 16px;
+    height: 20px;
+    background: url(../img/seckill-icon.png);
+    background-size: 16px 20px;
+    margin-top: 3px;
+
+}
+
+div.jd_sk_tip>span:nth-of-type(2) {
+    line-height: 26px;
+    color: #e92322;
+}
+
+div.jd_sk_tip>div {
+    height: 26px;
+    padding: 4px 0;
+}
+
+div.jd_sk_tip>div>span {
+    height: 18px;
+    width: 13px;
+    line-height: 18px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    display: inline-block; 
+}
+
+div.jd_sk_tip>div>span:nth-of-type(3n) {
+    background: #fff;
+    color: #000;
+}
+
+div.jd_sk_tip>span:nth-of-type(3) {
+    line-height: 26px;
+}
+
+div.jd_sk_content {
+    width: 100%;
+    padding: 20px 0;
+}
+
+div.jd_sk_content>ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+}
+
+div.jd_sk_content>ul>li {
+    flex: 1;
+    text-align: center;
+}
+
+div.jd_sk_content>ul>li>a {
+    display: block;
+    width: 100%;
+}
+
+div.jd_sk_content>ul>li>a>img {
+    width: 60%;
+    display: inline-block;
+}
+
+div.jd_sk_content>ul>li>a>p:last-child {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+
+/* 京东超市样式 */
+
+div.jd_market {
+    width: 100%;
+    margin-top: 10px;
+    box-shadow:  0px 1px 1px 0px #ccc;
+    background: #fff;
+}
+
+div.jd_market>div.jd_market_tip {
+    width: 100%;
+    height: 26px;
+    border-bottom: 1px solid #ccc;
+}
+
+div.jd_market>div.jd_market_tip>h3 {
+    padding-left: 30px;
+    line-height: 26px;
+    margin: 0;
+}
+
+div.jd_market>div.jd_market_content {
+    width: 100%;
+}
+
+/* 京东超市图片样式 */
+
+.a_w50 {
+    width: 50%;
+}
+
+.a_w50 > img {
+    width: 100%;
+    display: block;
+}
+
+.b_bottom {
+    border-bottom: 1px solid #ccc;
+}
+
+.b_left {
+    border-left: 1px solid #ccc;
+}
+
+.b_right {
+    border-left: 1px solid #ccc;
+}
